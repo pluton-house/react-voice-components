@@ -1,6 +1,2 @@
 #!/bin/sh
-cd src
-for file in *.js
-do
-  babel --plugins transform-react-jsx $file > ../lib/$file
-done
+babel --plugins transform-react-jsx src --out-dir lib
